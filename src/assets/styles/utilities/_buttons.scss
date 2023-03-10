@@ -1,0 +1,52 @@
+
+.btn-light {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border: 2px solid $color-secondary;
+    border-radius: 25px;
+    outline: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 700;
+    color: $color-secondary;
+    text-transform: uppercase;
+    transition: all 0.35s linear;
+
+    @media(min-width: $mobile) {
+      font-size: 20px;
+    }
+    @media(min-width: $tablet) {
+      font-size: 24px;
+    }
+
+
+    &:hover {
+        cursor: pointer;
+        color: $color-light;
+
+        &::after {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+          }
+    }
+
+    &::after {
+        content: "";
+        background: $color-secondary; /* color de fondo hover */
+        position: absolute;
+        z-index: -1;
+        padding: 16px 20px;
+        display: block;
+        left: 0;
+        right: 0;
+        top: 100%;
+        bottom: -100%;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+      }
+}
