@@ -1,6 +1,4 @@
 .navbar {
-
-
     &__menu {
         position: fixed;
         top: 5px;
@@ -14,19 +12,21 @@
         transition: all .3s linear;
         cursor: pointer;
 
-
         & .line {
             margin: 5px 0;
             background-color: $color-secondary;
             width: auto;
             height: 6px;
         }
+
         & .line-1 {
             width: 100%;
         }
+
         & .line-2 {
             width: 70%;
         }
+
         & .line-3 {
             width: 70%;
         }
@@ -35,9 +35,11 @@
             transform: rotate(45deg);
             transform-origin: left;
         }
+
         &.change .line-2 {
             display: none;
         }
+
         &.change .line-3 {
             width: 100%;
             transform: rotate(-45deg);

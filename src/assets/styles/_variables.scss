@@ -1,36 +1,41 @@
 @use "sass:color";
+
 @font-face {
-  font-family: 'Merriweather';
+  font-family: Merriweather;
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/Merriweather-Regular.ttf) format('truetype'),
+  src: url("../fonts/Merriweather-Regular.ttf") format('truetype'),
 }
+
 @font-face {
-  font-family: 'Merriweather';
+  font-family: Merriweather;
   font-style: bold;
   font-weight: 700;
-  src: url(../fonts/Merriweather-Bold.ttf) format('truetype'),
+  src: url("../fonts/Merriweather-Bold.ttf") format('truetype'),
 }
+
 @font-face {
-  font-family: 'Merriweather';
+  font-family: Merriweather;
   font-style: bold;
   font-weight: 900;
-  src: url(../fonts/Merriweather-Black.ttf) format('truetype'),
+  src: url("../fonts/Merriweather-Black.ttf") format('truetype'),
 }
+
 @font-face {
-  font-family: 'Merriweather';
+  font-family: Merriweather;
   font-style: italic;
   font-weight: 400;
-  src: url(../fonts/Merriweather-Italic.ttf) format('truetype'),
+  src: url("../fonts/Merriweather-Italic.ttf") format('truetype'),
 }
 
-$font-family-PTSerif: 'Merriweather', serif;
+$font-family-pt-serif: "Merriweather", serif;
 $font-family-serif: "Georgia", "Times New Roman", serif;
 
+// Color palette
 $color-primary: #3d2645;
 $color-secondary: #832161;
 $color-complementary: #da4167;
-$color-dark: #000000;
+$color-dark: #000;
 $color-light: #f0eff4;
 
 // Breakpoints

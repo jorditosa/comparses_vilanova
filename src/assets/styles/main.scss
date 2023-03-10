@@ -17,13 +17,17 @@
  @import "../../../node_modules/normalize-scss/sass/normalize";
 
  $fa-font-path: "../../../node_modules/@fortawesome/fontawesome-free/webfonts";
- // importing core styling file
- @import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
- //  importing Font Awesome styles
- @import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
- @import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
- @import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
- @import "../../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims.scss";
+
+ // Importing core styling file
+
+ @import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+
+ // Importing Font Awesome styles
+
+ @import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+ @import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+ @import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+ @import "../../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
 
 /**
  * Import layouts
@@ -33,8 +37,7 @@
 @import "layouts/home";
 @import "layouts/header";
 @import "layouts/navbar";
-
-@import "utilities/buttons.scss";
+@import "utilities/buttons";
 
 /**
  * Do NOT include anything else in this file!

@@ -6,7 +6,7 @@
     border: 2px solid $color-secondary;
     border-radius: 25px;
     outline: none;
-    padding: 12px 28px;
+    padding: 1vh 2vw;
     font-size: 16px;
     font-weight: 700;
     color: $color-secondary;
@@ -14,10 +14,25 @@
     transition: all 0.35s linear;
 
     @media(min-width: $mobile) {
-      font-size: 20px;
+      font-size: 18px;
     }
+
     @media(min-width: $tablet) {
-      font-size: 24px;
+      font-size: 22px;
+    }
+
+    &::after {
+      content: "";
+      background: $color-secondary; /* color de fondo hover */
+      position: absolute;
+      z-index: -1;
+      padding: 16px 20px;
+      display: block;
+      left: 0;
+      right: 0;
+      top: 100%;
+      bottom: -100%;
+      transition: all 0.35s;
     }
 
 
@@ -30,23 +45,7 @@
             right: 0;
             top: 0;
             bottom: 0;
-            -webkit-transition: all 0.35s;
             transition: all 0.35s;
           }
     }
-
-    &::after {
-        content: "";
-        background: $color-secondary; /* color de fondo hover */
-        position: absolute;
-        z-index: -1;
-        padding: 16px 20px;
-        display: block;
-        left: 0;
-        right: 0;
-        top: 100%;
-        bottom: -100%;
-        -webkit-transition: all 0.35s;
-        transition: all 0.35s;
-      }
 }
