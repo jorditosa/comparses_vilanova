@@ -1,5 +1,6 @@
 .navbar {
 
+
     &__menu {
         position: fixed;
         top: 5px;
@@ -11,6 +12,7 @@
         justify-content: space-between;
         align-items: end;
         transition: all .3s linear;
+        cursor: pointer;
 
 
         & .line {

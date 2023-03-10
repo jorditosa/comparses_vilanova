@@ -3,28 +3,42 @@
         flex-direction: column;
         align-items: start;
         justify-content: center;
-        height: 100vh;
+        height: 90vh;
         width: 100%;
+        position: relative;
+
+    &__logo {
+        width: 90%;
+        min-width: 300px;
+        max-width: 1600px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
 
     &__heading {
         color: $color-secondary;
+        text-shadow: 1px 1px 2px $color-complementary;
         font-weight: 900;
-        font-size: 50px;
+        font-size: clamp(60px, 6vw, 100px);
         margin-bottom: 20px;
         transition: 0.8s linear;
         letter-spacing: -5px; 
 
         @media(min-width: $mobile) {
-            font-size: 70px;
             letter-spacing: -8px; 
+            font-size: clamp(60px, 8vw, 150px);
         }
         @media(min-width: $tablet) {
-            font-size: 125px;
-            letter-spacing: -10px; 
+            letter-spacing: -12px; 
+            font-size: clamp(70px, 12vw, 170px);
         }
         @media(min-width: $desktop) {
-            font-size: 200px;
+            letter-spacing: -12px; 
+            font-size: clamp(80px, 14vw, 200px);
         }
+     
 
         &--location {
             display: block;
@@ -36,6 +50,30 @@
             }
             @media(min-width: $tablet) {
                 font-size: 48px;
+            }
+        }
+    }
+
+    &__explore {
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        bottom: 0;
+      
+
+        & i {
+            font-size: 6vw;
+            transition: all 0.4s linear;
+            color: $color-secondary;
+
+            &:hover {
+                transform: translateY(15px);
+                cursor: pointer;
+                font-size: 5vw;
             }
         }
     }
