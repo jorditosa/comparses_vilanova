@@ -6,7 +6,6 @@
 /**
  * Import variables
  */
-
 @import "variables";
 
 /**
@@ -15,7 +14,7 @@
  * see commented examples below
  */
 
-// @import "some-node-module";
+ @import "../../../node_modules/normalize-scss/sass/normalize";
 // @import "@some-company/some-node-module";
 
 /**
@@ -24,6 +23,7 @@
  */
 
 @import "layouts/home";
+@import "layouts/header";
 
 /**
  * Do NOT include anything else in this file!
