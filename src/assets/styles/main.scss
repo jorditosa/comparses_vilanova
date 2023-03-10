@@ -15,7 +15,14 @@
  */
 
  @import "../../../node_modules/normalize-scss/sass/normalize";
-// @import "@some-company/some-node-module";
+
+ $fa-font-path: "../../../node_modules/@fortawesome/fontawesome-free/webfonts";
+ // importing core styling file
+ @import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+ //  importing Font Awesome styles
+ @import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+ @import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+ @import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 
 /**
  * Import layouts
