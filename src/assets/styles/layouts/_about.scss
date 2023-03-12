@@ -1,0 +1,19 @@
+.about {
+    background: url(../images/terra_comparses.jpg) no-repeat center center, $color-primary;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+
+    & p{
+        color: $color-light;
+        margin: 10px 0;
+        line-height: 24px;
+    }
+
+    & strong {
+        font-size: 22px;
+    }
+}
