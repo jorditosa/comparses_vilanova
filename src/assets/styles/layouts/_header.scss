@@ -28,17 +28,17 @@
 
         @media(min-width: $mobile) {
             letter-spacing: -8px; 
-            font-size: clamp(60px, 8vw, 150px);
+            font-size: clamp(60px, 6vw, 150px);
         }
 
         @media(min-width: $tablet) {
-            letter-spacing: -12px; 
-            font-size: clamp(70px, 12vw, 170px);
+            letter-spacing: -9px; 
+            font-size: clamp(70px, 8vw, 170px);
         }
 
         @media(min-width: $desktop) {
-            letter-spacing: -12px; 
-            font-size: clamp(80px, 14vw, 200px);
+            letter-spacing: -10px; 
+            font-size: clamp(80px, 10vw, 200px);
         }
      
 
