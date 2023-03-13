@@ -1,0 +1,62 @@
+.footer {
+    padding: 10vh 0;
+    text-align: center;
+    color: $color-secondary;
+
+    @media(min-width: $tablet) {
+        text-align: start;
+    }
+
+    & a {
+        color: $color-secondary;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @media(min-width: $tablet) {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        & h2 {
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 18px;
+            padding: 2vh 0;
+            border-top: 1px solid $color-primary;
+            border-bottom: 1px solid $color-primary;
+        }
+
+        & ul {
+            padding: 2vh 0;
+
+            & li {
+                padding: 20px 0;
+                cursor: pointer;
+                text-decoration: none;
+                transition: all 0.4s ease;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+
+
+
+    &__copyright {
+        padding: 2vh 0;
+        border-top: 1px solid $color-primary;
+        font-size: 13px;
+        text-align: center;
+
+        @media(min-width: $tablet) {
+            font-size: 18px;
+            text-align: start;
+        }
+    }
+}

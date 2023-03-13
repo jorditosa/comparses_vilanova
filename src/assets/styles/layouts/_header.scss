@@ -70,11 +70,11 @@
 
         & i {
             font-size: 6vw;
-            transition: all 0.4s linear;
+            transition: all 0.1s ease;
             color: $color-secondary;
 
             &:hover {
-                transform: translateY(15px);
+                transform: translateY(5px);
                 cursor: pointer;
                 font-size: 5vw;
             }
