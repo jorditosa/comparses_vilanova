@@ -4,6 +4,7 @@
  */
 
 import { navbarChange } from "./navbar";
+import { gridItemIn, gridItemOut } from "./grid";
 
 /**
  * Write any other JavaScript below
