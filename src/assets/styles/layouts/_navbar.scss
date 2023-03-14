@@ -91,7 +91,9 @@
             flex-direction: column;
             justify-content: space-between;
 
-            & li {
+            & li a {
+                display: block;
+                color: $color-light;
                 text-decoration: underline;
                 text-decoration-thickness: 3px;
                 transition: all 0.1s linear;
@@ -102,15 +104,15 @@
                 }
             }
 
-            & li:nth-child(1) {
+            & li a:nth-child(1) {
                 text-align: center;
             }
 
-            & li:nth-child(2) {
+            & li a:nth-child(2) {
                 text-align: start;
             }
 
-            & li:nth-child(3) {
+            & li a:nth-child(3) {
                 text-align: end;
             }
         }

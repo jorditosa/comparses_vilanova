@@ -1,0 +1,13 @@
+@mixin heading($color:$color-secondary, $spacing:-5px) {
+    font-size: clamp(50px, 5vw, 70px);
+    font-weight: 700;
+    padding: 5vh 0;
+    text-shadow: 1px 1px 2px $color-complementary;
+    color: $color;
+    letter-spacing: $spacing;
+
+    @media(min-width: $tablet) {
+        font-size: clamp(70px, 8vw, 170px);
+    }
+
+}
